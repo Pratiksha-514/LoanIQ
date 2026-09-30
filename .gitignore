@@ -1,0 +1,55 @@
+# Dependencies & Builds
+node_modules/
+dist/
+dist-ssr/
+build/
+.cache/
+*.local
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Editor & OS files
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Security / Secrets / Credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+serviceAccountKey.json
+credentials.json
+*.secret
+
+# Databases
+*.db
+*.sqlite
+*.sqlite3
+
+# Temporary / Debug / Scratch files & Sample Documents
+tmp/
+temp/
+fake_pan_card.*
+debug_db.cjs
+test_api.cjs
+test_api.js
+
