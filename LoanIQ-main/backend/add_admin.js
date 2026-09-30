@@ -9,14 +9,11 @@ async function main() {
     process.exit(1);
   }
 
-  const username = process.env.ADMIN_USERNAME || process.argv[2] || 'admin';
-  const password = process.env.ADMIN_PASSWORD || process.argv[3] || 'admin123';
-
-  console.log(`👤 Adding admin: ${username}`);
+  console.log('👤 Adding admin: Swapnil');
   try {
-    const result = await registerAdmin(username, password);
+    const result = await registerAdmin('Swapnil', '123456');
     if (result.success) {
-      console.log(`✅ Admin "${username}" added successfully!`);
+      console.log('✅ Admin "Swapnil" added successfully!');
       console.log('ID:', result.id);
     } else {
       console.log('❌ Error adding admin:', result.error);
